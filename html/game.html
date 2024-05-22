@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz RAEE - Juego</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div id="hud-item">
+                    <p id = "progressText"class="hud-prefix">
+                        Pregunta
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull">
+
+                        </div>
+                    </div>
+                    </h1>
+                </div>
+            </div>
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Puntaje 
+                    </p>
+                    <h1 class="hud-main-text" id = "score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">¿Cómo se denomina a los equipos descartados que usan una fuente de energía para operar?</h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A
+                </p>
+                <p class="choice-text" data-number="1">Opcion 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B
+                </p>
+                <p class="choice-text" data-number="2">Opcion 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C
+                </p>
+                <p class="choice-text" data-number="3">Opcion 3</p>
+            </div> 
+            <div class="choice-container">
+                <p class="choice-prefix">D
+                </p>
+                <p class="choice-text" data-number="4">Opcion 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="instruccionesPopUp">
+        <div class="contenido-popup">
+            <h2>Instrucciones del juego</h2>
+            <p>¡Prepárate para poner a prueba tus conocimientos sobre los Residuos de Aparatos Eléctricos y Electrónicos (RAEE) y la Economía Circular!</p>
+            <h3>Instrucciones:</h3>
+            <p>Tendrás que responder a 35 preguntas sobre RAEE. Cada pregunta tiene 4 opciones de respuesta, pero solo una es correcta.</p>
+            <p>Por cada respuesta correcta, ganarás 10 puntos. El puntaje máximo que puedes obtener es de 350 puntos.</p>
+            <p>¡Buena suerte y que te diviertas aprendiendo!</p>
+            <button id="cerrarPopUp">Comenzar</button>
+        </div>
+    </div>
+    <audio src="/sfx/efectoDeSonidoCut.mp3" id="correctAudio"></audio>
+    <audio src="/sfx/errorSonido.mp3" id="incorrectAudio"></audio>
+    <script src="/js/popUpInstrucciones.js"></script>
+    <script src="/js/game.js"></script>
+</body>
+</html>
